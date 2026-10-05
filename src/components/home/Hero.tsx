@@ -45,15 +45,20 @@ export function Hero() {
             industrial applications.
           </motion.p>
 
-          <motion.div {...rise(0.25)} className="mt-9 flex flex-wrap gap-3">
-            <ButtonLink to="/products" variant="primary">
-              Explore Products
-              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-            </ButtonLink>
-            <ButtonLink to="/contact" variant="secondary">
-              Get in Touch
-            </ButtonLink>
-          </motion.div>
+        <motion.div {...rise(0.25)} className="mt-9 flex flex-wrap gap-3">
+  <ButtonLink to="/products" variant="primary">
+    Explore Products
+    <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+  </ButtonLink>
+
+  <ButtonLink
+    to="/Promaxx-Catalogue.pdf"
+    variant="secondary"
+    download="Promaxx-Industries-Catalogue.pdf"
+  >
+    Download Catalogue
+  </ButtonLink>
+</motion.div>
         </div>
 
         <motion.div

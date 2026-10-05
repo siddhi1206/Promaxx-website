@@ -38,7 +38,7 @@ export const applications = [
 
 
 export const images = {
-  heroCastor: "logo1.png",
+  heroCastor: "hero.png",
 
   wheelUhmw: "/uhmw.png",
 

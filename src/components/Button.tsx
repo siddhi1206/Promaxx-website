@@ -14,21 +14,61 @@ const variants: Record<Variant, string> = {
   quiet:
   'px-0 py-0 min-h-0 text-mustard-dark hover:text-navy normal-case tracking-normal text-base'
 };
-
 interface ButtonLinkProps {
   to: string;
   variant?: Variant;
   children: React.ReactNode;
   className?: string;
+  download?: string;
 }
 
-/** Internal navigation button (react-router). */
-export function ButtonLink({ to, variant = 'primary', children, className = '' }: ButtonLinkProps) {
-  return (
-    <Link to={to} className={`${base} ${variants[variant]} ${className}`}>
-      {children}
-    </Link>);
+/** Internal navigation button (react-router) or downloadable file. */
+export function ButtonLink({
+  to,
+  variant = 'primary',
+  children,
+  className = '',
+  download
+}: ButtonLinkProps) {
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
 
+    const response = await fetch(to);
+    const blob = await response.blob();
+
+    const url = window.URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = download || 'download';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    window.URL.revokeObjectURL(url);
+  };
+
+  if (download) {
+    return (
+      <a
+        href={to}
+        download={download}
+        onClick={handleDownload}
+        className={`${base} ${variants[variant]} ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      to={to}
+      className={`${base} ${variants[variant]} ${className}`}
+    >
+      {children}
+    </Link>
+  );
 }
 
 interface ButtonAnchorProps {
