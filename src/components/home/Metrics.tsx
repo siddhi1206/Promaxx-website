@@ -3,7 +3,7 @@ import { CountUp } from '../CountUp';
 import { Reveal } from '../Reveal';
 
 const metrics = [
-{ from: 50, to: 300, unit: 'mm', label: 'Wheel diameter range' },
+{ from: 100, to: 300, unit: 'mm', label: 'Wheel diameter range' },
 { from: 250, to: 2000, unit: 'kg', label: 'Load capacity per wheel' },
 { from: null, to: 90, unit: '%', label: 'Approximate repeat business' },
 { from: null, to: 100, unit: '%', label: 'On-time delivery commitment' }];

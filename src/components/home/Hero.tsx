@@ -94,7 +94,7 @@ export function Hero() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/45">
                 Wheel Ø
               </p>
-              <p className="mt-1 text-sm font-bold text-mustard">50–300 mm</p>
+              <p className="mt-1 text-sm font-bold text-mustard">100–300 mm</p>
             </li>
             <li className="border border-navy-line bg-navy-soft px-4 py-3">
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/45">

@@ -14,17 +14,17 @@ export const company = {
   positioning:
   'Reliable wheels and castors for demanding industrial applications.',
 
-  // Display values (shown on the Contact page)
-  phone: '[COMPANY PHONE]',
-  whatsapp: '[COMPANY WHATSAPP]',
-  email: '[COMPANY EMAIL]',
+ // Display values
+  phone: '+91 77690 40505',
+  whatsapp: '+91 77690 40505',
+  email: 'promaxxindustries21@gmail.com',
   address: '[COMPANY ADDRESS]',
-  hours: '[TO BE PROVIDED]',
+  hours: '9:00 am to 8:00 pm',
 
-  // Link values — swap the placeholder for the real number / address.
-  phoneHref: 'tel:[COMPANY PHONE]',
-  whatsappHref: 'https://wa.me/[COMPANY WHATSAPP]',
-  emailHref: 'mailto:[COMPANY EMAIL]'
+  // Link values
+  phoneHref: 'tel:+917769040505',
+  whatsappHref: 'https://wa.me/917769040505',
+  emailHref: 'mailto:promaxxindustries21@gmail.com'
 };
 
 export const applications = [

@@ -128,14 +128,8 @@ export function Contact() {
             <h2 className="text-2xl font-extrabold tracking-tight text-navy lg:text-3xl">
               Company Information
             </h2>
-            <dl className="mt-8 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="bg-white p-6">
-                <dt className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-ink/45">
-                  <MapPinIcon className="h-4 w-4 text-mustard-dark" aria-hidden="true" />
-                  Address
-                </dt>
-                <dd className="mt-3 text-sm font-semibold text-navy">{company.address}</dd>
-              </div>
+            <dl className="mt-8 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-3">
+              
               <div className="bg-white p-6">
                 <dt className="text-xs font-bold uppercase tracking-[0.18em] text-ink/45">
                   Phone
@@ -158,8 +152,8 @@ export function Contact() {
               </div>
             </dl>
             <p className="mt-6 text-xs text-ink/50">
-              Placeholders shown above are replaced in one place — see{' '}
-              <code className="font-semibold text-ink/70">data/site.ts</code>.
+              
+              <code className="font-semibold text-ink/70"></code>.
             </p>
           </Reveal>
         </div>
