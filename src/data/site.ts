@@ -48,14 +48,22 @@ export const images = {
 
   castorFixed: "/fixhd50.png",
 
-  castorSwivel: "/swivel75.png",
+  castorFixedHD: "/fixhd75.png",
+
+  castorSwivel: "/swivel50.png",
+
+  castorSwivelHD: "/swivel75.png",
 
   castorBrake: "/brake.png",
 
   castorTwin: "/twin.png",
 
+  castorTwinFix: "/twinfix.png",
+
+  rivet: "/rivet.png",
+
   warehouse: "/6a68c887-22d0-4bb6-ab5a-3f8e85dde68a.jpg",
 
-  factory: "/cd938f13-038d-4ac5-abde-ecc0bce8f02c.jpg"
+  factory: "/factory1.png"
 
 };

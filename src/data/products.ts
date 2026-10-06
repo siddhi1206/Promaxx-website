@@ -60,7 +60,7 @@ export const products: Product[] = [
 },
 {
   id: 'fixed-castor',
-  name: 'Fixed Castor',
+  name: 'Fixed Castor (50)',
   group: 'Castors',
   category: 'Castor',
   image: images.castorFixed,
@@ -77,7 +77,7 @@ export const products: Product[] = [
 },
 {
   id: 'swivel-castor',
-  name: 'Swivel Castor',
+  name: 'Swivel Castor (50)',
   group: 'Castors',
   category: 'Castor',
   image: images.castorSwivel,
@@ -111,10 +111,10 @@ export const products: Product[] = [
 },
 {
   id: 'heavy-duty-fixed-castor',
-  name: 'Heavy-Duty Fixed Castor',
+  name: 'Heavy-Duty Fixed Castor (75)',
   group: 'Castors',
   category: 'Heavy-Duty Castor',
-  image: images.castorFixed,
+  image: images.castorFixedHD,
   imageAlt: 'Promaxx heavy-duty fixed industrial castor',
   description:
   'Reinforced fixed castor for higher load requirements in industrial environments.',
@@ -128,10 +128,10 @@ export const products: Product[] = [
 },
 {
   id: 'heavy-duty-swivel-castor',
-  name: 'Heavy-Duty Swivel Castor',
+  name: 'Heavy-Duty Swivel Castor (75)',
   group: 'Castors',
   category: 'Heavy-Duty Castor',
-  image: images.castorSwivel,
+  image: images.castorSwivelHD,
   imageAlt: 'Promaxx heavy-duty swivel industrial castor',
   description:
   'Reinforced swivel castor for higher loads where manoeuvrability is required.',
@@ -148,7 +148,7 @@ export const products: Product[] = [
   name: 'HD Rivet Castor',
   group: 'Castors',
   category: 'Heavy-Duty Castor',
-  image: images.castorFixed,
+  image: images.rivet,
   imageAlt: 'Promaxx heavy-duty rivet industrial castor',
   description:
   'Riveted heavy-duty construction for compact, robust castor assemblies.',
@@ -162,7 +162,7 @@ export const products: Product[] = [
 },
 {
   id: 'twin-castor',
-  name: 'Twin Castor',
+  name: 'Twin Castor Swivel',
   group: 'Castors',
   category: 'Castor',
   image: images.castorTwin,
@@ -176,6 +176,23 @@ export const products: Product[] = [
   applications: ['Storage facilities', 'Industrial equipment'],
   specifications: {},
   tags: ['Twin', 'Swivel']
+},
+{
+  id: 'twin-castor-fixed',
+  name: 'Twin Castor Fixed',
+  group: 'Castors',
+  category: 'Castor',
+  image: images.castorTwinFix,
+  imageAlt: 'Promaxx twin wheel industrial castor',
+  description:
+  'Twin wheel configuration that distributes load across two wheels.',
+  material: '',
+  diameter: '',
+  loadCapacity: '',
+  bracketType: 'Fixed',
+  applications: ['Storage facilities', 'Industrial equipment'],
+  specifications: {},
+  tags: ['Twin', 'Fixed']
 }];
 
 
