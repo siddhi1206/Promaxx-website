@@ -62,7 +62,7 @@ export const images = {
 
   rivet: "/rivet.png",
 
-  warehouse: "/6a68c887-22d0-4bb6-ab5a-3f8e85dde68a.jpg",
+  warehouse: "/banner.png",
 
   factory: "/factory1.png"
 
